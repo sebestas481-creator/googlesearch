@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ukázka různých HTML formulářových prvků.">
+    <title>Ukázka formulářových prvků</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="top-bar">
+      <a href="index.html">Vyhledávání Google</a>
+      <a href="images.html">Obrázky</a>
+      <a href="advanced.html">Rozšířené vyhledávání</a>
+      <a class="portfolio-link" href="https://github.com/sebestas481-creator" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    </header>
+
+    <main class="subpage-main">
+      <h1 class="subpage-heading">Ukázka formulářových prvků</h1>
+      <p class="subpage-intro">Přehled běžných HTML ovládacích prvků pro školní projekt.</p>
+      <p class="demo-notice"><strong>Ukázková stránka:</strong> Ovládací prvky níže slouží pouze k předvedení HTML. Neodesílají data ani neprovádějí vyhledávání.</p>
+
+      <div class="demo-grid">
+        <fieldset class="demo-control">
+          <legend>Textové vstupy</legend>
+          <label for="demo-text">Text</label>
+          <input id="demo-text" type="text" placeholder="Textový vstup">
+          <label for="demo-search">Hledání</label>
+          <input id="demo-search" type="search" placeholder="Hledat">
+          <label for="demo-password">Heslo</label>
+          <input id="demo-password" type="password" placeholder="Ukázkové heslo">
+        </fieldset>
+
+        <fieldset class="demo-control">
+          <legend>Kontaktní údaje</legend>
+          <label for="demo-email">E-mail</label>
+          <input id="demo-email" type="email" placeholder="jmeno@example.cz">
+          <label for="demo-url">Webová adresa</label>
+          <input id="demo-url" type="url" placeholder="https://example.cz">
+          <label for="demo-tel">Telefon</label>
+          <input id="demo-tel" type="tel" placeholder="+420 123 456 789">
+        </fieldset>
+
+        <fieldset class="demo-control">
+          <legend>Datum a čas</legend>
+          <label for="demo-date">Datum</label>
+          <input id="demo-date" type="date">
+          <label for="demo-time">Čas</label>
+          <input id="demo-time" type="time">
+          <label for="demo-datetime">Datum a čas</label>
+          <input id="demo-datetime" type="datetime-local">
+          <label for="demo-month">Měsíc</label>
+          <input id="demo-month" type="month">
+          <label for="demo-week">Týden</label>
+          <input id="demo-week" type="week">
+        </fieldset>
+
+        <fieldset class="demo-control">
+          <legend>Čísla a další hodnoty</legend>
+          <label for="demo-number">Číslo</label>
+          <input id="demo-number" type="number" min="0" max="100" placeholder="0">
+          <label for="demo-range">Rozsah</label>
+          <input id="demo-range" type="range" min="0" max="100" value="50">
+          <label for="demo-color">Barva</label>
+          <input id="demo-color" type="color" value="#1a73e8">
+          <label for="demo-file">Soubor</label>
+          <input id="demo-file" type="file">
+        </fieldset>
+
+        <fieldset class="demo-control">
+          <legend>Výběr možností</legend>
+          <span class="control-label">Zaškrtávací políčka</span>
+          <label><input type="checkbox" name="demo-check" value="prvni"> První možnost</label>
+          <label><input type="checkbox" name="demo-check" value="druha"> Druhá možnost</label>
+          <span class="control-label">Přepínače</span>
+          <label><input type="radio" name="demo-radio" value="a"> Možnost A</label>
+          <label><input type="radio" name="demo-radio" value="b"> Možnost B</label>
+        </fieldset>
+
+        <fieldset class="demo-control">
+          <legend>Seznamy a text</legend>
+          <label for="demo-select">Výběr z nabídky</label>
+          <select id="demo-select">
+            <option value="">Vyberte možnost</option>
+            <optgroup label="Ovoce">
+              <option>Jablko</option>
+              <option>Hruška</option>
+            </optgroup>
+            <optgroup label="Zelenina">
+              <option>Mrkev</option>
+              <option>Okurka</option>
+            </optgroup>
+          </select>
+          <label for="demo-multiple">Vícenásobný výběr (Ctrl nebo Cmd)</label>
+          <select id="demo-multiple" multiple>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+          </select>
+          <label for="demo-textarea">Víceřádkový text</label>
+          <textarea id="demo-textarea" rows="3" placeholder="Napište zprávu"></textarea>
+        </fieldset>
+
+        <fieldset class="demo-control">
+          <legend>Další prvky</legend>
+          <label for="demo-datalist">Vstup s našeptávačem</label>
+          <input id="demo-datalist" list="demo-options" placeholder="Začněte psát">
+          <datalist id="demo-options">
+            <option value="Google">
+            <option value="HTML">
+            <option value="CSS">
+          </datalist>
+          <label for="demo-progress">Průběh</label>
+          <progress id="demo-progress" value="65" max="100">65 %</progress>
+          <label for="demo-meter">Měřítko</label>
+          <meter id="demo-meter" min="0" max="100" low="30" high="80" optimum="70" value="70">70 ze 100</meter>
+          <output>Ukázkový výstup</output>
+        </fieldset>
+
+        <fieldset class="demo-control">
+          <legend>Tlačítka</legend>
+          <div class="button-examples">
+            <button class="demo-button" type="button">Tlačítko</button>
+            <input class="demo-button" type="button" value="Input button">
+            <input class="demo-button" type="submit" value="Odeslat (neaktivní)" disabled>
+            <input class="demo-button" type="reset" value="Reset">
+          </div>
+        </fieldset>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fraw.githubusercontent.com%2Fsebestas481-creator%2Fgooglesearch%2Fmain%2Fforms.html" target="_blank" rel="noopener noreferrer">Validace HTML</a>
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraw.githubusercontent.com%2Fsebestas481-creator%2Fgooglesearch%2Fmain%2Fstyles.css&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=cs" target="_blank" rel="noopener noreferrer">Validace CSS</a>
+      <a href="https://github.com/sebestas481-creator/googlesearch/blob/main/citace.md" target="_blank" rel="noopener noreferrer">Citace a zdroje</a>
+      <a href="https://github.com/sebestas481-creator" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    </footer>
+  </body>
+</html>

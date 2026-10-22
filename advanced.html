@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rozšířené vyhledávání Google se čtyřmi vyhledávacími podmínkami.">
+    <title>Rozšířené vyhledávání Google</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="top-bar">
+      <a href="index.html">Vyhledávání Google</a>
+      <a href="images.html">Obrázky</a>
+      <a href="forms.html">Formuláře</a>
+      <a class="portfolio-link" href="https://github.com/sebestas481-creator" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    </header>
+
+    <main class="subpage-main">
+      <h1 class="subpage-heading advanced-heading">Rozšířené vyhledávání</h1>
+      <p class="subpage-intro">Zadejte slova nebo fráze, podle kterých chcete najít stránky.</p>
+
+      <form class="advanced-form" action="https://www.google.com/search" method="get">
+        <div class="advanced-row">
+          <label for="all-words">Najít stránky s… všemi těmito slovy:</label>
+          <input id="all-words" type="text" name="as_q">
+        </div>
+        <div class="advanced-row">
+          <label for="exact-phrase">Najít stránky s… přesným tímto slovem nebo frází:</label>
+          <input id="exact-phrase" type="text" name="as_epq">
+        </div>
+        <div class="advanced-row">
+          <label for="any-words">Najít stránky s… některým z těchto slov:</label>
+          <input id="any-words" type="text" name="as_oq">
+        </div>
+        <div class="advanced-row">
+          <label for="none-words">Najít stránky s… žádným z těchto slov:</label>
+          <input id="none-words" type="text" name="as_eq">
+        </div>
+        <div class="advanced-actions">
+          <button class="advanced-submit" type="submit">Rozšířené vyhledávání</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fraw.githubusercontent.com%2Fsebestas481-creator%2Fgooglesearch%2Fmain%2Fadvanced.html" target="_blank" rel="noopener noreferrer">Validace HTML</a>
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraw.githubusercontent.com%2Fsebestas481-creator%2Fgooglesearch%2Fmain%2Fstyles.css&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=cs" target="_blank" rel="noopener noreferrer">Validace CSS</a>
+      <a href="https://github.com/sebestas481-creator/googlesearch/blob/main/citace.md" target="_blank" rel="noopener noreferrer">Citace a zdroje</a>
+      <a href="https://github.com/sebestas481-creator" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    </footer>
+  </body>
+</html>
